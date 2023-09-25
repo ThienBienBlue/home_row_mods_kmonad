@@ -1,0 +1,11 @@
+** Installation
+
+1. Install KMonad
+2. Perform any additional steps in KMonad's FAQ page
+   ~sudo groupadd uinput~
+   ~sudo usermod -aG input username~
+   ~sudo usermod -aG uinput username~
+   Add to ~/etc/udev/rules.d/100-home-row-mods-kmonad.rules~ the following ~KERNEL=="uinput", MODE="0660", GROUP="uinput", OPTIONS+="static_node=uinput"~
+3. ~git clone~ this repo into ~$HOME/.config/home_row_mods_kmonad~
+4. Run ~$HOME/.config/home_row_mods_kmonad.sh~ whenever you want to enable the layout.
+   Symbolically link this to ~$HOME/.local/bin~ or somewhere on your ~$PATH~ as needed.

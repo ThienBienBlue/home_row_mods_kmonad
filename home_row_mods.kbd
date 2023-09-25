@@ -1,0 +1,24 @@
+(defcfg
+  input  (device-file "$KEYBOARD")
+  output (uinput-sink "My KMonad output")
+
+  fallthrough true)
+
+(defsrc
+  caps a s d f g h j k l ;)
+
+(defalias
+  esc_caps (tap-hold-next-release 200 esc caps)
+
+  met_a (tap-hold-next-release 200 a lmet)
+  alt_s (tap-hold-next-release 200 s lalt)
+  sft_d (tap-hold-next-release 200 d lsft)
+  ctl_f (tap-hold-next-release 200 f lctl)
+
+  ctl_j (tap-hold-next-release 200 j rctl)
+  sft_k (tap-hold-next-release 200 k rsft)
+  alt_l (tap-hold-next-release 200 l lalt)
+  met_; (tap-hold-next-release 200 ; rmet))
+
+(deflayer homerowmods
+  @esc_caps @met_a @alt_s @sft_d @ctl_f g h @ctl_j @sft_k @alt_l @met_;)
