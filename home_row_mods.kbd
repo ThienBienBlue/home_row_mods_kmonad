@@ -15,10 +15,15 @@
   sft_d (tap-hold-next-release 200 d lsft)
   ctl_f (tap-hold-next-release 200 f lctl)
 
+  arrowkeys_g (tap-hold-next-release 200 g (layer-toggle arrowkeys))
+
   ctl_j (tap-hold-next-release 200 j rctl)
   sft_k (tap-hold-next-release 200 k rsft)
   alt_l (tap-hold-next-release 200 l lalt)
   met_; (tap-hold-next-release 200 ; rmet))
 
 (deflayer homerowmods
-  @esc_caps @met_a @alt_s @sft_d @ctl_f g h @ctl_j @sft_k @alt_l @met_;)
+  @esc_caps @met_a @alt_s @sft_d @ctl_f @arrowkeys_g h @ctl_j @sft_k @alt_l @met_;)
+
+(deflayer arrowkeys
+  _ _ _ _ _ _ left down up right _)
