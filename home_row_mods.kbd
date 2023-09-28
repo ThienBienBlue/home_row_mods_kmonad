@@ -5,7 +5,8 @@
   fallthrough true)
 
 (defsrc
-  caps a s d f g h j k l ;)
+  caps a s d f g h j k l ;
+                  n m)
 
 (defalias
   esc_caps (tap-hold-next-release 200 esc caps)
@@ -23,7 +24,9 @@
   met_; (tap-hold-next-release 200 ; rmet))
 
 (deflayer homerowmods
-  @esc_caps @met_a @alt_s @sft_d @ctl_f @arrowkeys_g h @ctl_j @sft_k @alt_l @met_;)
+  @esc_caps @met_a @alt_s @sft_d @ctl_f @arrowkeys_g h @ctl_j @sft_k @alt_l @met_;
+                                                      _      _)
 
 (deflayer arrowkeys
-  _ _ _ _ _ _ left down up right _)
+  _ _ _ _ _ _ left down up right esc
+                  -    =)
