@@ -28,5 +28,5 @@
                                                       _      _)
 
 (deflayer arrowkeys
-  _ _ _ _ _ _ left down up right esc
+  _ _ _ _ _ _ left down up right bspc
                   -    =)
