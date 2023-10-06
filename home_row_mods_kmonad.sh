@@ -9,7 +9,7 @@ if [[ -n "$keyboards" ]]; then
 
     echo "Please select one of the following keyboards to apply home row mods to:"
     echo
-    for keyboard in $keyboards; do
+    for keyboard in ${keyboards[@]}; do
         i=$((i + 1))
         echo "[$i] $keyboard"
     done
@@ -17,7 +17,7 @@ if [[ -n "$keyboards" ]]; then
     echo
     read -p "Select one of [1-$i]: " selected_idx
     i=1
-    for keyboard in $keyboards; do
+    for keyboard in ${keyboards[@]}; do
         if [[ "$i" == "$selected_idx" ]]; then
             echo "Enabling home row mods for keyboard: $keyboard"
             export KEYBOARD=$keyboard

@@ -10,27 +10,27 @@
                  n m)
 
 (defalias
-  esc_caps (tap-hold-next-release 200 esc caps)
+  esc_caps (tap-hold-next-release 150 esc caps)
 
-  met_a (tap-hold-next-release 200 a lmet)
-  alt_s (tap-hold-next-release 200 s lalt)
-  sft_d (tap-hold-next-release 200 d lsft)
-  ctl_f (tap-hold-next-release 200 f lctl)
+  met_a (tap-hold-next-release 150 a lmet)
+  alt_s (tap-hold-next-release 150 s lalt)
+  sft_d (tap-hold-next-release 150 d lsft)
+  ctl_f (tap-hold-next-release 150 f lctl)
 
-  ctl_j (tap-hold-next-release 200 j rctl)
-  sft_k (tap-hold-next-release 200 k rsft)
-  alt_l (tap-hold-next-release 200 l lalt)
-  met_; (tap-hold-next-release 200 ; rmet)
+  ctl_j (tap-hold-next-release 150 j rctl)
+  sft_k (tap-hold-next-release 150 k rsft)
+  alt_l (tap-hold-next-release 150 l lalt)
+  met_; (tap-hold-next-release 150 ; rmet)
 
-  programmer_g (tap-hold-next-release 200 g (layer-toggle programmer))
+  programmer_g (tap-hold-next-release 150 g (layer-toggle programmer))
 
-  parens_u (tap-hold-next-release 200 u \()
-  parens_i (tap-hold-next-release 200 i \))
-  parens_o (tap-hold-next-release 200 o [)
-  parens_p (tap-hold-next-release 200 p ])
+  parens_u (tap-hold-next-release 150 u \()
+  parens_i (tap-hold-next-release 150 i \))
+  parens_o (tap-hold-next-release 150 o [)
+  parens_p (tap-hold-next-release 150 p ])
 
-  symbol_n (tap-hold-next-release 200 n -)
-  symbol_m (tap-hold-next-release 200 m =))
+  symbol_n (tap-hold-next-release 150 n -)
+  symbol_m (tap-hold-next-release 150 m =))
 
 (deflayer homerowmods
                                                                 @parens_u @parens_i @parens_o @parens_p
