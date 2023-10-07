@@ -22,7 +22,8 @@
   alt_l (tap-hold-next-release 150 l lalt)
   met_; (tap-hold-next-release 150 ; rmet)
 
-  programmer_g (tap-hold-next-release 150 g (layer-toggle programmer))
+  programmer_g (tap-hold-next-release 150 g (layer-toggle programmer_right))
+  programmer_h (tap-hold-next-release 150 h (layer-toggle programmer_left))
 
   quote_y (tap-hold-next-release 150 y ')
   parens_u (tap-hold-next-release 150 u \()
@@ -34,11 +35,16 @@
   symbol_m (tap-hold-next-release 150 m =))
 
 (deflayer homerowmods
-                                                      @quote_y  @parens_u @parens_i @parens_o @parens_p
-  @esc_caps @met_a @alt_s @sft_d @ctl_f @programmer_g h         @ctl_j    @sft_k    @alt_l    @met_;
-                                                      @symbol_n @symbol_m)
+                                                      @quote_y      @parens_u @parens_i @parens_o @parens_p
+  @esc_caps @met_a @alt_s @sft_d @ctl_f @programmer_g @programmer_h @ctl_j    @sft_k    @alt_l    @met_;
+                                                      @symbol_n     @symbol_m)
 
-(deflayer programmer
+(deflayer programmer_right
               '    \(   \) [     ]
   _ _ _ _ _ _ left down up right bspc
               -    =)
+
+(deflayer programmer_left
+                         _ _    _    _    _
+  _ esc tab enter bspc _ _ rctl rsft lalt rmet
+                         _ _)
