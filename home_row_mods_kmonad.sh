@@ -1,6 +1,6 @@
 #!/bin/bash
 
-[[ -d /dev/input/by-id ]] && keyboards="$(find /dev/input/by-id -print | grep -E '(kbd|usb-Logitech_USB_Receiver-if02-event-mouse)') "
+[[ -d /dev/input/by-id ]] && keyboards="$(find /dev/input/by-id -print | grep -E '(kbd|usb-Logitech_USB_Receiver-.*)') "
 keyboards+=$(find /dev/input/by-path -name '*kbd*' -print)
 
 if [[ -n "$keyboards" ]]; then
