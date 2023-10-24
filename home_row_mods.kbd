@@ -47,9 +47,9 @@
        _    _    _    _    _    end  pgdn _    _     _)
 
 (deflayer layer_entr
-       _    _    _     _    _    _    _    _    _    _
-  _    esc  tab  enter bspc del  _    _    _    _    _
-       _    _    _     _    _    _    _    _    _    _)
+       _    _    _    _    _     _    _    _    _    _
+  _    esc  tab  bspc del  enter _    _    _    _    _
+       _    _    _    _    _     _    _    _    _    _)
 
 (deflayer layer_nums
        _    _    _    _    _    _    1    2    3    _
