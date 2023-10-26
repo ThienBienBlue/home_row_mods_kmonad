@@ -10,24 +10,24 @@
           z    x    c    v    b    n    m    ,    .    /)
 
 (defalias
-  esc_caps (tap-hold-next-release 150 esc caps)
+  esc_caps (tap-hold-next-release 200 esc caps)
 
-  met_a (tap-hold-next-release 150 a lmet)
-  alt_s (tap-hold-next-release 150 s lalt)
-  sft_d (tap-hold-next-release 150 d lsft)
-  ctl_f (tap-hold-next-release 150 f lctl)
+  met_a (tap-hold-next-release 200 a lmet)
+  alt_s (tap-hold-next-release 200 s lalt)
+  sft_d (tap-hold-next-release 200 d lsft)
+  ctl_f (tap-hold-next-release 200 f lctl)
 
-  ctl_j (tap-hold-next-release 150 j rctl)
-  sft_k (tap-hold-next-release 150 k rsft)
-  alt_l (tap-hold-next-release 150 l lalt)
-  met_; (tap-hold-next-release 150 ; rmet)
+  ctl_j (tap-hold-next-release 200 j rctl)
+  sft_k (tap-hold-next-release 200 k rsft)
+  alt_l (tap-hold-next-release 200 l lalt)
+  met_; (tap-hold-next-release 200 ; rmet)
 
-  layer_g (tap-hold-next-release 150 g (layer-toggle layer_navi))
-  layer_h (tap-hold-next-release 150 h (layer-toggle layer_entr))
-  layer_v (tap-hold-next-release 150 v (layer-toggle layer_nums))
-  layer_b (tap-hold-next-release 150 b (layer-toggle layer_nums))
-  layer_n (tap-hold-next-release 150 n (layer-toggle layer_syms))
-  layer_m (tap-hold-next-release 150 m (layer-toggle layer_syms)))
+  layer_g (tap-hold-next-release 200 g (layer-toggle layer_navi))
+  layer_h (tap-hold-next-release 200 h (layer-toggle layer_entr))
+  layer_v (tap-hold-next-release 200 v (layer-toggle layer_nums))
+  layer_b (tap-hold-next-release 200 b (layer-toggle layer_nums))
+  layer_n (tap-hold-next-release 200 n (layer-toggle layer_syms))
+  layer_m (tap-hold-next-release 200 m (layer-toggle layer_syms)))
 
 (deflayer homerowmods
             _      _      _      _        _        _        _        _      _      _
