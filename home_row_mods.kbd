@@ -25,19 +25,17 @@
   layer_g (tap-hold-next-release 200 g (layer-toggle layer_navi))
   layer_h (tap-hold-next-release 200 h (layer-toggle layer_entr))
   layer_v (tap-hold-next-release 200 v (layer-toggle layer_nums))
-  layer_b (tap-hold-next-release 200 b (layer-toggle layer_nums))
-  layer_n (tap-hold-next-release 200 n (layer-toggle layer_syms))
   layer_m (tap-hold-next-release 200 m (layer-toggle layer_syms)))
 
 (deflayer homerowmods
             _      _      _      _        _        _        _        _      _      _
   @esc_caps @met_a @alt_s @sft_d @ctl_f   @layer_g @layer_h @ctl_j   @sft_k @alt_l @met_;
-            _      _      _      @layer_v @layer_b @layer_n @layer_m _      _      _)
+            _      _      _      @layer_v _        _        @layer_m _      _      _)
 
 (deflayer layer_navi
-       _    _    _    _    _    _    home pgup _     _
+       _    _    _    _    _    _    home end  _     _
   _    _    _    _    _    _    left down up   right _
-       _    _    _    _    _    _    end  pgdn _     _)
+       _    _    _    _    _    _    pgup pgdn _     _)
 
 (deflayer layer_entr
        _    _    _    _    _     _    _    _    _    _
